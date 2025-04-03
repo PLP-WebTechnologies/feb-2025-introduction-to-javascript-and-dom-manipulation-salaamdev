@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>African Content</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div>Logo</div>
+        <ul>
+            <li><a href="#countries">Countries</a></li>
+            <li><a href="#wildlife">Wildlife</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+            <li><a href="#registration">Registration</a></li>
+        </ul>
+    </nav>
+
+    <!-- Ordered List with Roman Numerals -->
+    <h2 id="countries">East African Countries</h2>
+    <ol type="I">
+        <li>Kenya</li>
+        <li>Tanzania</li>
+        <li>Uganda</li>
+        <li>Rwanda</li>
+        <li>Burundi</li>
+    </ol>
+    
+    <!-- External Image from Pexels -->
+    <h2 id="wildlife">African Wildlife</h2>
+    <img src="https://images.pexels.com/photos/1054655/pexels-photo-1054655.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+         alt="Elephant in Kenya" width="500">
+    
+    <!-- Table of 5 Contacts -->
+    <h2 id="contacts">Nairobi Business Contacts</h2>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>Wanjiku Kamau</td>
+            <td>45 Moi Avenue, Nairobi</td>
+            <td>+254-722-123456</td>
+            <td>wanjiku@example.co.ke</td>
+        </tr>
+        <tr>
+            <td>Otieno Odhiambo</td>
+            <td>78 Kenyatta St, Kisumu</td>
+            <td>+254-733-789012</td>
+            <td>otieno@example.co.ke</td>
+        </tr>
+        <tr>
+            <td>Amina Hassan</td>
+            <td>23 Biashara St, Mombasa</td>
+            <td>+254-722-456789</td>
+            <td>amina@example.co.ke</td>
+        </tr>
+        <tr>
+            <td>Kipchoge Keino</td>
+            <td>56 Eldoret Rd, Eldoret</td>
+            <td>+254-733-234567</td>
+            <td>kipchoge@example.co.ke</td>
+        </tr>
+        <tr>
+            <td>Njeri Maina</td>
+            <td>12 Uhuru Highway, Nakuru</td>
+            <td>+254-722-345678</td>
+            <td>njeri@example.co.ke</td>
+        </tr>
+    </table>
+    
+    <!-- Registration Form -->
+    <h2 id="registration">Kenya Safari Club Registration</h2>
+    <form action="#" method="post">
+        <!-- Name field -->
+        <div>
+            <label for="name">Name: *</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        
+        <!-- Email field -->
+        <div>
+            <label for="email">Email: *</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+        </div>
+        
+        <!-- Password field -->
+        <div>
+            <label for="password">Password: *</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        
+        <!-- Date field -->
+        <div>
+            <label for="visit-date">Planned Visit Date:</label>
+            <input type="date" id="visit-date" name="visit-date">
+        </div>
+        
+        <!-- Dropdown -->
+        <div>
+            <label for="region">Region:</label>
+            <select id="region" name="region">
+                <option value="">--Select--</option>
+                <option value="nairobi">Nairobi</option>
+                <option value="coast">Coast</option>
+                <option value="rift">Rift Valley</option>
+                <option value="western">Western</option>
+                <option value="eastern">Eastern</option>
+            </select>
+        </div>
+        
+        <!-- Radio buttons -->
+        <div>
+            <p>Safari Package:</p>
+            <input type="radio" id="basic" name="package" value="basic">
+            <label for="basic">Basic</label>
+            
+            <input type="radio" id="premium" name="package" value="premium">
+            <label for="premium">Premium</label>
+            
+            <input type="radio" id="luxury" name="package" value="luxury">
+            <label for="luxury">Luxury</label>
+        </div>
+        
+        <!-- Checkboxes -->
+        <div>
+            <p>Activities of Interest:</p>
+            <input type="checkbox" id="wildlife" name="activities" value="wildlife">
+            <label for="wildlife">Wildlife Safari</label>
+            
+            <input type="checkbox" id="hiking" name="activities" value="hiking">
+            <label for="hiking">Mountain Hiking</label>
+            
+            <input type="checkbox" id="cultural" name="activities" value="cultural">
+            <label for="cultural">Cultural Tours</label>
+        </div>
+        
+        <!-- Submit button -->
+        <div>
+            <input type="submit" value="Register">
+        </div>
+    </form>
+
+    <!-- Add a button to trigger JavaScript actions -->
+    <button id="change-text-btn">Change Text</button>
+    <button id="add-element-btn">Add Element</button>
+    <button id="remove-element-btn">Remove Element</button>
+
+    <!-- Placeholder for dynamic content -->
+    <div id="dynamic-content"></div>
+</body>
+</html>
